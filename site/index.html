@@ -1,29 +1,149 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Stop Procrastinating</title>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
-            
-            body {
-                font-family: 'Mukta', sans-serif;
-                text-align: center;
-            }
 
+<head>
+    <title>Stop Procrastinating.</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            text-align: center;
+            background-image: linear-gradient(#0E1997, #140f3d);
+            background-color: #0E1997;
+            color: #FAFAFA;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            font-size: 10vw;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 5vw;
+            margin: 0;
+            line-height: 100px;
+        }
+
+        p {
+            font-size: 1.8vw;
+            margin-left: 20vw;
+            margin-right: 20vw;
+        }
+
+        a {
+            color: #2277FF;
+        }
+
+        footer {
+            padding-top: 15px;
+            padding-bottom: 3px;
+        }
+
+        #title {
+            padding-bottom: 500px;
+        }
+
+        #description {
+            padding-bottom: 200px;
+        }
+
+        #install {
+            padding-bottom: 500px;
+        }
+
+        #download {
+            width: 200px;
+            height: 200px;
+        }
+
+        .question {
+            font-size: 35px;
+            font-style: italic;
+            margin-left: 17px;
+            margin-right: 17px;
+        }
+
+        .answer {
+            font-size: 28px;
+            padding-bottom: 30px;
+        }
+
+        @media only screen and (max-width: 1000px) {
             h1 {
-                font-size: 150px;
+            font-size: 9.2vw;
+            margin: 0;
+        }
+            h2 {
+                font-size: 8.5vw;
                 margin: 0;
+                line-height: 10vw;
             }
 
-            h2 {
-                font-size: 100px;
-                margin: 0;
-                line-height: 100px;
+            p {
+                font-size: 4vw;
+                margin: 2px;
             }
-        </style> 
-    </head>
-    <body>
-        <h1>Stop Procastinating.</h1>
+
+        .question {
+            font-size: 4.5vw;
+            font-style: italic;
+            margin-left: 17px;
+            margin-right: 17px;
+        }
+
+        .answer {
+            font-size: 4vw;
+            padding-bottom: 30px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="title">
+        <h1>Stop Procrastinating.</h1>
         <h2>Really. Stop it.</h2>
-    </body>
+    </div>
+    <div id="description">
+        <h2>Ok fine, we'll give you a hand.</h2>
+        <p>Stop Procrastinating is a FireFox browser extension that limits the amount of time you can spend on certain
+            websites.</p>
+        <p>Students nowadays often struggle more than ever trying to stay focused whilst completing schoolwork on a
+            computer. Students can hardly resist the temptation of a scroll down Twitter, a quick playthrough of a Flash
+            game (even though Flash is dead), or an enriching viewing of Minecraft Let's Play: Episode 2763.</p>
+        <p>There's a fantastic <a
+                href="https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator">TED Talk on
+                procrastination</a> if you want to learn more about it.</p>
+        <p>Procrastination has become especially problematic since the beginning of the COVID-19 pandemic because
+            virtual learning done solely on a computer has become more prevalent than ever.</p>
+        <p>Stop procrastination hopes to help combat this by allowing you to set a time limit on certain user-defined
+            websites so you don't spend hours on end procrastination on your schoolwork.</p>
+        <br>
+        <p><strong>TL;DR: It prevents you from wasting too much time on Reddit when you really should get a start on that
+            paper you have due tomorrow.</strong></p>
+    </div>
+    <div id="install">
+        <h2>Install it here.</h2>
+        <a href="about:blank"><img src="logo.png" title="Click to download" alt="Click to download" id="download"></a>
+        <p>If you find Stop Procrastinating useful, please tell your friends about it (even your imaginary ones).</p>
+    </div>
+    <div id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <p class="question">What the h*ck?</p>
+        <p class="answer">This project was made for the NotUniversity Hacks hackathon.</p>
+        <p class="question">Why no Chrome extension?</p>
+        <p class="answer">If you're still using Chrome, you deserve to fail on that paper.</p>
+        <p class="question">Is it free?</p>
+        <p class="answer">Yep.</p>
+        <p class="question">Can I have the source code?</p>
+        <p class="answer"><a href="https://github.com/wbne/webextension-notuni-hacks">Sure.</a></p>
+        <p class="question">Who are you?</p>
+        <p class="answer">Three professional procrastinators who code sometimes.</p>
+    </div>
+
+    <footer>© 2020 prydt, wbne, Lets-Teleport-Bread</footer>
+</body>
+
 </html>
