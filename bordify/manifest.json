@@ -6,10 +6,24 @@
 
   "description": "Adds a red border to all webpages matching mozilla.org.",
 
+  "permissions": [
+    "activeTab"
+  ],
+
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png"
+  },
+
+  "browser_action": {
+    "default_title": "potato",
+    "default_popup": "popup/popcorn.html"
+  },
 
   "content_scripts": [
     {
-      "matches": ["*://*.google.com/*"],
+      "matches": ["*://*.mozilla.org/*"],
       "js": ["bordify.js"]
     }
   ]

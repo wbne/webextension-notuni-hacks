@@ -1,0 +1,14 @@
+html, body {
+  width: auto;
+}
+
+#button {
+  background-color: #E5F2F2;
+  size: 1.5em;
+  margin: 10px;
+  padding: 5px;
+}
+
+#button:hover {
+  background-color: #D5E2E2;
+}
