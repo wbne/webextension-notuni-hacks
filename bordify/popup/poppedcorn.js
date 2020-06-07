@@ -10,19 +10,15 @@ function listenForClicks() {
      */
       switch (e.originalTarget.textContent) {
         case "1 min":
-          setTimeout(function(){document.body.style.border = "1px solid red";}, 1000);
           time = 1;
           break;
         case "5 min":
-          document.body.style.border = "5px solid red";
           time = 5;
           break;
         case "15 min":
-          document.body.style.border = "15px solid red";
           time = 15;
           break;
         case "30 min":
-          document.body.style.border = "30px solid red";
           time = 30;
           break;
       }
