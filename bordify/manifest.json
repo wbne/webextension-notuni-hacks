@@ -1,13 +1,14 @@
 {
 
   "manifest_version": 2,
-  "name": "Borderify",
+  "name": "stop procrastinating",
   "version": "1.0",
 
-  "description": "Adds a red border to all webpages matching mozilla.org.",
+  "description": "A timer that reminds you to get back to work after a break. ",
 
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
 
   "icons": {
@@ -17,15 +18,26 @@
   },
 
   "browser_action": {
-    "default_title": "potato",
+    "default_title": "Stop Procrastinating",
     "default_popup": "popup/popcorn.html"
   },
 
   "content_scripts": [
     {
-      "matches": ["*://*.mozilla.org/*"],
-      "js": ["bordify.js"]
+      "matches": ["<all_urls>"],
+      "js": ["websiteChecker.js"]
     }
-  ]
+  ],
+
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "addon@example.com"
+    }
+  }
 
 }
