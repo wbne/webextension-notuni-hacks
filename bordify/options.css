@@ -1,1 +1,25 @@
-body{color: purple;}
+body{
+  color: purple;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 30%;
+  text-align: center;
+}
+
+button{
+  text-decoration: none;
+  text-decoration-style: solid;
+  border: none;
+  background-color: purple;
+  color: white;
+  size: 1.5em;
+  width: auto;
+  height: auto;
+  margin: 5px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+button:hover{
+  background-color: grey;
+}
